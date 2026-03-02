@@ -1,0 +1,740 @@
+DIO Blip - Lógica de Programação
+
+O QUE É NECESSÁRIO PARA APRENDER LINGUAGEM DE PROGRAMAÇÃO?
+    1. Lógica de programação (Desenvolver o seu pensamento estrutural racional e computacional)
+    2. Sintaxe (Conjunto de regras gramaticais que definem como escrever o código de forma que seja válido e compreensível para o computador, ou seja, é uma Linguagem de programação)
+
+CONCEITOS BÁSICOS
+    Algoritmo (Ordem lógica de ações para resolver um problema)
+    Fluxograma (Representação visual de uma sequencia de ações lógicas)
+
+EXEMPLOS DE FLUXOGRAMAS
+    Exemplo 1:https://www.citisystems.com.br/wp-content/uploads/2012/11/formas-basicas-fluxograma.jpg
+    Exemplo 2:https://ferramentasdaqualidade.org/wp-content/uploads/2016/11/Capturar_2016_12_23_14_15_52_123.png
+
+PARA TIRAR DÚVIDAS DE DEV:
+1. https://stackoverflow.com/questions
+2. https://web.dio.me/articles
+
+GUIA DE LÓGICA DE PROGRAMAÇÃO
+    https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07
+
+CONCEITOS DE INPUT, PROCESS E OUTPUT
+    Eles descrevem o ciclo fundamental de qualquer sistema: Input (Entrada) são os dados ou recursos iniciais; Process (Processamento) é a transformação desses dados; e Output (Saída) é o resultado final gerado, essencial em computação, produção e até aprendizado, conectando o que entra com o que sai através de uma etapa de transformação. 
+
+Input (Entrada)
+    Definição: Tudo que entra no sistema, seja dados, matérias-primas, informações ou recursos externos.
+    Exemplos: Digitar um texto no teclado, dados inseridos por um usuário, matéria-prima para uma fábrica, arquivos lidos por um software, ou um microfone captando som. 
+
+Process (Processamento)
+    Definição: A etapa de transformação onde os inputs são analisados, manipulados e convertidos para gerar um resultado.
+    Exemplos: Um servidor executando um comando, um computador calculando, uma linha de montagem transformando peças em um carro, ou um aluno estudando e praticando. 
+
+Output (Saída)
+    Definição: O resultado final do processamento, a informação ou produto que é entregue ao usuário ou ao ambiente externo.
+    Exemplos: Uma resposta na tela do chat, o produto acabado de uma fábrica, um relatório gerado por um software, ou uma música tocada pelos alto-falantes. 
+
+Aplicação Prática (Exemplo Computacional)
+    Input: Você digita "Olá" no teclado.
+    Process: O computador recebe e processa o comando.
+    Output: A palavra "Olá" aparece na tela. 
+
+Aplicação Prática (Exemplo de Aprendizado)
+    Input: Ler um livro ou assistir a uma aula (consumo de informação).
+    Process: Praticar, resolver exercícios, aplicar o conhecimento.
+    Output: A capacidade de resolver um problema ou responder uma pergunta de forma eficaz (produção de conhecimento).
+
+Exemplo em website: https://www.ionos.com/pt-br/digitalguide/servidor/conhecimento/input-process-output/
+Ferramenta para realizar anotações: tldraw.com
+
+DESAFIO DE INPUT, PROCESS E OUTPUT
+    Faça uma visão macro de um app que solicita viagens de veículos online
+
+RESPOSTA
+Features
+    1. Solicitar veículo
+    2. Cadastrar usuário
+    3. Cadastrar motorista
+
+Input
+    1. Solicitar veículo:
+    . Clicar no botão "solicitar nova viagem"
+    . Colocar ponto de partida e destino
+
+    2. Cadastrar usuário:
+    . Clicar no botão "Cadastrar novo usuário"
+    . Digitar na tela nome, cpf e cartão de crédito
+
+    3. Cadastrar motorista:
+    . Clicar no botão "solicitar novo cadastro"
+    . Colocar dados de placa de carro, nome e cpf
+
+Process
+    1. Solicitar veículo:
+    . Verifica motoristas mais pertos da região
+    . Aciona o motorista mais perto
+    . Coloca no GPS do motorista o ponto do passageiro
+
+    2. Cadastrar usuário:
+    . Verificar CPF se possui irregularidades
+    . Verificar se cartão de crédito é disponível
+
+    3. Cadastrar motorista:
+    . Verificar CPF se possui irregularidades
+    . Verificar placa do carro se possui irregularidades
+
+Output
+    1. Solicitar veículo:
+    . Mensagem de saída "Seu motorista está indo até você"
+    . Atualiza tela com tempo e estimativa de chegada do motorista
+
+    2. Cadastrar usuário:
+    . Mensagem de saída "Usuário Cadastrado"
+
+    3. Cadastrar motorista:
+    . Mensagem de saída: "Motorista cadastrado com sucesso"
+    . Atualizar cor de fundo
+
+O QUE É UM IDE (Integrated Development Enviroment)
+    É um software que centraliza as ferramentas essenciais para programadores (editor de código, compilador/interpretador, depurador) numa única interface, otimizando a criação, teste e depuração de software, aumentando muito a produtividade ao simplificar o fluxo de trabalho. Por exemplo, caso queire codar na web utilize playcode.io ou tryit compiler, caso queire codar utilizando um software, utilize vscode studio.
+
+O QUE É UMA VARIÁVEL?
+    É um nome simbólico que aponta para um espaço na memória do computador, usado para armazenar dados (valores) que podem mudar durante a execução de um programa, como números, textos ou dados mais complexos, funcionando como uma "caixa" com um rótulo para guardar informações que o código precisa acessar e manipular.
+
+COMO CODAR VARIÁVEIS NO JAVASCRIPT
+// saída
+console.log("Digite o nome do seu jogador")
+
+// declara uma variável
+let nickname = "FelipinhoMestre"
+
+// o "let permite criar uma variável", 0 "=" representa uma atribuição, "//" é uma anotação não executável.
+
+// concantenando uma mensagem fixa + uma variável
+console.log("Bem vindo" + nickname)
+console.log(nickname + "entrou no servidor")
+
+
+O QUE É UMA CONSTANTE?
+    É um valor fixo e imutável que não pode ser alterado durante a execução de um programa, ao contrário das variáveis, sendo usada para representar dados que não mudam
+
+O QUE É UMA VARIÁVEL?
+    É um nome simbólico que aponta para um local na memória do computador, usado para armazenar dados (como números, textos, valores verdadeiro/falso) cujo conteúdo pode ser alterado durante a execução de um programa, tornando o código flexível e dinâmico.
+
+APLICAÇÃO DE CONSTANTE E VARIÁVEL EM JAVASCRIPT
+const notificacao = "Pokemon Go diz: "
+// "const" significa "constante"
+// "notificacao" é o nome da constante
+
+//saida
+console.log(notificacao + "tem um novo pokemon na região")
+console.log(notificacao + "você foi derrotado por um líder")
+
+EXEMPLO GERAL EM JAVASCRIPT
+let poteCafe = "Café Pilão"
+let poteAcucar = "Açúcar Cristal"
+let poteBiscoito = "Biscoito Maizena"
+const mensagemDaVovo = "Na cozinha da vovó hoje tem: "
+
+console.log(mensagemDaVovo +
+poteCafe + " - " +
+poteAcucar + " - " +
+poteBiscoito
+)
+
+
+TIPOS DE VARIÁVEIS
+    São classificações de dados que determinam o tipo de valor que uma variável pode armazenar, como números inteiros (int), decimais (float/double), textos (string), valores lógicos (boolean), e estruturas de dados mais complexas como listas e dicionários, sendo essenciais para organizar e manipular informações corretamente.  
+
+EXEMPLO DE TIPOS DE VARIÁVEIS EM JAVASCRIPT
+//pokemon
+let nomePokemon = "Pikachu" //string
+let nivelPokemon = 20 //int
+let pontosDeVidaPokemon = 45 //int
+let pokemonSexo = "M" //char
+let selecionavel = false //boolean
+
+MAIS TIPOS DE VARIÁVEIS
+    Variáveis numéricas: São usadas para armazenar valores numéricos
+    Inteiro: Armazena números inteiros, como 1, 10, -5
+    Ponto flutuante ou decimal: Armazena números com casas decimais, como 3,14, -0.5.
+    Números Complexos: Armazena números complexos, como 2+3j
+    Variáveis de texto: Usadas para armazenas sequências de caracteres.
+    String: Armazena uma sequência de caracteres, como "Olá, mundo!"
+    Caractere: Armazena um único caractere, como 'a', "X", "@".
+    Variáveis Lógicas: Usadas para representar datas e horários.
+    Data: Armazena datas, no formato AAAA-MM-DD.
+    Hora: Armazena horários, no formato HH:MM:SS.
+
+RECAP DO ASSUNTO DE TIPOS DE VARIÁVEIS
+// nome, idade, número de telefone, cpf, endereço
+// string = armazenar texto
+// number = armazenar números
+// boolean = armazenar valores lógicos
+
+let nomePEssoa = "Josicreide do Pythinho"
+let idade = 115
+let numeroTelefone = "11-984713388"
+let cpf = "312.122.312-45"
+let endereco = "Rua dos limoeiros, numero 75, bairro rodrigue santos"
+let recebePensao = true
+
+O QUE SÃO VETORES/ARRAYS
+    É uma estrutura de dados fundamental que armazena uma coleção de elementos do mesmo tipo (homogêneos) em posições de memória consecutivas, acessíveis por um único nome de variável e um índice (número da posição, geralmente começando em 0) para acessar cada item individualmente, permitindo organizar e manipular listas de dados de forma eficiente, como uma sequência de caixas numeradas.
+
+EXEMPLO DE VETORES/ARRAYS
+let pokemon = ["pikachu", "charmander", "Bulbasaur"]
+console.log(pokemon)
+>>> pikachu, charmander, bulbasaur
+
+console.log(pokemon[0])
+>>> pikachu
+
+console.log(pokemon.length)
+>>> 2
+
+O QUE SÃO MATRIZES
+    São estruturas de dados que organizam elementos do mesmo tipo (números, textos, etc.) em uma grade de linhas e colunas, como uma tabela, permitindo armazenar e acessar grandes volumes de dados de forma organizada e eficiente usando um único nome de variável e índices (posição na linha e coluna) para cada elemento.
+
+EXEMPLO DE MATRIZES
+let nomesPokemon = ["Pikachu", "Charmander", "Bulbassaur"]
+let timePokemon = [
+    ["pikachu", "M", 1],
+    ["Charmander", "F", 3]
+]
+
+
+console.log("O pokemon" + timePokemon[1][0] + " é do sexo " + timePokemon[1][1])
+
+
+O QUE SÃO OPERADORES
+    São símbolos especiais (como +, -, *, /, ==) que realizam operações em valores (operandos) para manipular dados, fazer cálculos matemáticos, comparações lógicas ou atribuir valores.
+
+OPERADORES ARITMÉTICOS (EXEMPLOS EM JAVASCRIPT)
+    Adição (+): let result = 5 + 3;
+    Substração (-): let result = 8 - 2;
+    Multiplicação (*): let result = 4 * 6;
+    Divisão (/): let result  10 / 2;
+    Módulo (Resto da divisão, %): let result 10 % 3;
+
+OPERADORES RELACIONAIS/COMPARAÇÃO (EXEMPLOS EM JAVASCRIPT)
+    Igual a (==): let isEqual = (x == y);
+    Diferente de (!=): let isNotEqual = (x != y);
+    Maior que (>): let isGreater = (x > y);
+    Menor que (<): let isLess = (x < y);
+    Maior ou igual a (>=): let isGreaterOrEqual = (x >= y);
+    Menor ou igual a (<=): let isLessorEqual = (x <= y);
+
+OPERADORES LÓGICOS (EXEMPLOS EM JAVASCRIPT)
+    AND Lógico (&&): if (condition1 && condition2)
+    OR Lógico (||): if (condition1 || condition2)
+    NOT Lógico (!!): if (!condition)
+
+OPERADORES DE ATRIBUIÇÃO (EXEMPLOS EM JAVASCRIPT)
+    Atribuição (=): let x = 5;
+    Adição e Atribuição(+=): let num = 10; num += 2;
+    Subtração e Atribuição(-=): let num = 10; num -=3;
+    Multiplicação e Atribuição(*=): let num = 5; num *= 4;
+    Divisão e Atribuição(/=): let num = 10; num /= 2;
+    Módulo e Atribuição(%=): let num = 10; num %- 3;
+
+OPERADORES DE INCREMENTO E DECREMENTO (EXEMPLOS EM JAVASCRIPT)
+    Incremento(++): let counter = 0; counter++;
+    Decremento(--): let counter = 5; counter--;
+
+
+EXEMPLO DE OPERADORES MATEMÁTICOS
+let idade = 30
+console.log("valor da inha variavel " + idade)
+
+idade = 30 + 6
+console.log("operação de adição " + idade)
+
+let primeiroNumero = 1023
+let segundoNumero = 23
+console.log(primeiroNumero - segundoNumero)
+
+let precoProduto = 100.99
+let valorComTaxo = precoProduto * 2
+console.log(valorComTaxo)
+
+DEFININDO ESCOPOS
+    É a ordem das operações em uma equação, começando pelos paranteses, seguindo ao ordem PEMDAS, por exemplo:
+
+let resultado = 2 * (5 + 5)
+
+
+CONDICIONAIS IF
+    São estruturas de controle que permitem ao código tomar decisões, utilizando operadores comuns.
+    if (Se): Avalia uma condição. Se for true, executa o código dentro do if. Se for false, ignora o bloco.
+    else (Senão): Executa um bloco de código alternativo se a condição do if for false.
+    else if (Senão se): Permite testar múltiplas condições em sequência. Se o if anterior for false, testa a condição do else if, e assim por diante, até encontrar a primeira true ou chegar ao else fina
+
+
+CONDICIONAIS IF (EXEMPLO EM PSEUDOCÓDIGO)
+SE idade >= 18 ENTÃO
+  IMPRIMIR "Você é maior de idade."
+SENÃO SE idade >= 13 ENTÃO
+  IMPRIMIR "Você é adolescente."
+SENÃO
+  IMPRIMIR "Você é criança."
+FIM SE
+
+OPERADORES COMUNS
+    > (Maior que)
+    < (Menor que)
+    == (Igual a)
+    != (Diferente de)
+    >= (Maior ou igual a)
+    <= (Menor ou igual a)
+    === (igualdade estrita, ou seja, somente retorna true se os operandos forem do mesmo tipo e valor.)
+
+O QUE É SWITCH CASE?
+    É uma estrutura de controle de fluxo em programação que avalia uma variável ou expressão e executa um bloco de código específico com base no valor correspondente entre várias opções (case), sendo uma alternativa mais limpa e legível para múltiplos if-else aninhados, especialmente em menus ou quando se compara uma única variável com vários valores fixos, usando break para sair e default para um caso genérico. 
+
+SWITCH CASE (EXEMPLO EM JAVASCRIPT)
+switch (diaDaSemana) {
+  case 1:
+    console.log("Domingo");
+    break;
+  case 2:
+    console.log("Segunda-feira");
+    break;
+  default:
+    console.log("Dia inválido");
+}
+
+O QUE SÃO LAÇOS DE REPETIÇÃO?
+    São estruturas fundamentais em programação que permitem executar um bloco de código várias vezes, seja um número fixo de vezes, enquanto uma condição for verdadeira ou para cada item de uma coleção, tornando o código mais curto e eficiente para tarefas repetitivas, com tipos comuns como for, while, do-while e foreach.
+    for: Ideal quando você sabe quantas vezes precisa repetir. Define contador, condição e incremento na mesma linha (ex: for (i=0; i<5; i++)).
+    while: Executa o bloco enquanto a condição for verdadeira. Testa a condição antes da primeira execução (ex: while (condicao) { ... }).
+    do-while: Semelhante ao while, mas executa o bloco pelo menos uma vez e só depois testa a condição (ex: do { ... } while (condicao)).
+    foreach: Percorre todos os elementos de uma coleção (lista, array)
+
+DESAFIOS DE PROJETOS: CRIE UM PORTFÓLIO VENCEDOR
+Aprendizagem Baseada em Projetos (PBL)
+    O Aprendizado Baseado em Projetos é sobre imergir em grandes ieias e criar soluções tangíveis. Neste método, você constroi projetos práticos que refletem problemas e desafios do mundo real. Esses projetos não apenas aumentam seu conhecimento,mas também demonstram suas competências.
+
+POTENCIALIZE SUA CARREIRA
+1. Portfólio
+    Cada projeto concluído reforça suas habilidades, promove networking e dá estaque ao seu portfólio profissional.
+2. Destaque
+    Ao finalizar seus projetos na DIO, você obtém uma certificação de competências, um diferencial importante para abrir portas no mercado de trabalho.
+3. Oportunidades
+    Através da Talent Match, você tem acesso às melhores oportuniades de emprego no setor de tecnologia. Vamos ajudá-lo a construir a carreira dos seus sonhos.
+
+TIPOS DE HABILIDADES
+Hard Skills
+    Linguagens de programação, Arquiteturas de Sistema, Banco de Dados, Stacks de Desenvolvimento, Ferramentas.
+Soft Skills
+    Trabalho em Equipe, Pensamento Crítico, Gerenciamento do Tempo, Comunicação, Liderança.
+
+CONTRIBUINDO EM UM PROJETO OPEN SOURCE NO GITHUB
+Repositório Git
+    O Git é um conceito essencial no mercado de trabalho atualmente, por isso sempre reforçamos sua importância em nossa metodologia educacional. Por isso, todo código-fonte desenvolvido durante este conteúdo foi versionado no seguinte endereço para que você possa consultá-lo a qualquer momento.
+
+VSCODE
+O que é
+    É um editor de código-fonte gratuito.
+Como Instalar?
+    Através do site oficial code.visualstudio.com
+
+NODE
+O que é?
+    É um ambiente de execução de código aberto e multiplataforma que permite rodar JavaScript fora do navegador.
+Como utilizá-lo?
+    Quando quiser rodar um código .js (javascript), baixe o arquivo no site nodejs.org e execute o seu arquivo javascript no terminal, escrevendo: node seucódigo.js
+
+GITHUB
+O que é?
+    É uma plataforma online que funciona como um "hub" para desenvolvedores, usando o sistema de controle de versão Git para hospedar, gerenciar e colaborar em projetos de software
+Como criar uma conta?
+
+O QUE É GIT?
+    É um sistema de controle de versão distribuído (VCS) de código aberto que rastreia alterações em arquivos de projetos
+
+COMO INSTALAR GIT?
+    Através do site git-scm.com
+
+COMO CONFIGURAR GIT?
+    Para configurar o Git, você precisa definir seu nome e e-mail com:
+
+git --version (caso já possuir git e saber a versão)
+git config --global user.name "Seu Nome"
+git config -- global user.email "seu@email.com"
+
+    Usando o Git Bash ou terminal, garantindo que correspondam ao seu perfil no GitHub para commits futuros. Verifique a configuração com:
+
+git config --list
+
+    E opcionalmente configure um editor de texto com:
+
+git config --global core.editor "seu_editor"
+code --wait (para VS Code)  
+
+
+
+COMO CLONAR SEU REPOSITÓRIO DO GITHUB?
+1. Obtenha a URL do Repositório
+2. Abra o Terminal ou Git Bash
+3. Navegue até o Local Desejado (utilizando o comando cd)
+4. Execute o Comando de Clonagem (Digite git clone seguido da URL que você copiou e, opcionalmente, o nome da pasta local)
+
+
+
+COMO ENVIAR PROJETOS PARA O GITHUB USANDO VSCODE
+
+CRIAR NOVO REPOSITÓRIO
+
+git init
+git status
+git add (nome do arquivo) OU git add . OU git rm (nome do arquivo)
+git commit -m "first commit"
+git branch -M main
+git remote add origin (link do repositório)
+git push -u origin main
+
+PEGAR UM REPOSITÓRIO EXISTENTE
+git remote add origin (link do repositório)
+git branch -M main
+git push -u origin main
+
+
+COMO COLOCAR UM ARQUIVO DE CÓDIGO EM UM REPOSITÓRIO DO GITHUB? (UTILIZANDO A LINHA DE COMANDO/TERMINAL)
+
+cd /caminho/do/seu/projeto
+
+git add nome_do_arquivo.py
+OU git add. (para todos os arquivos)
+
+commit -m "Adiciona novo arquivo de código"
+
+git push -u origin main OU git push -u origin master
+
+
+COMO ATUALIZAR MEU PROJETO UTILIZANDO GIT?
+1. Abra o terminal
+2. Baixe as alterações (caso estiver colaborando)
+git pull origin main
+3. Verifique o status (veja quais arquivos foram modificados)
+git status
+4. Adicione as alterações (adicione s arquivos modificados à área de staging)
+git add .
+5. Envie para o repositório remoto (github/gitlab/bitbucket)
+git push origin nome-da-branch (geralmente, origin e main ou master)
+
+    Se você estiver apenas começando a trabalhar no projeto ou quer garantir que está atualizado com o que os outros fizeram, o comando git pull deve ser o primeiro a ser executado, antes de git add e commit
+
+DESAFIO CLASSIFICADOR DE NÍVEL DE HERÓI
+    O que deve ser utilizado: Varíaveis, Operadores, Laços de Repetição, Estrutura de decisões.
+    Objetivo: Crie uma variável para armazenar o nome e a quantidade de experiência (XP) de um herói, depois utilize uma estrutura de decisão para apresentar alguma das mensagens abaixo.
+    Se XP for menor do que 1.000 = Ferro
+    Se XP for entre 1.001 e 2.000 = Bronze
+    Se XP for entre 2.001 e 5.000 = Prata Ouro
+    Se XP for entre 5.001 e 8.000 = Platina Diamante
+    Se XP for entre 8.001 e 9.000 = Ascendente
+    Se XP for entre 9.001 e 10.000 = Imortal
+    Se XP for maior ou igual a 10.001 = Radiante
+    Saída: Ao final deve se exibir uma mensagem: "O Herói de nome {nome} está no nível de {nivel}"
+
+O QUE É UMA FUNÇÃO?
+    É um bloco de código reutilizável que executa uma tarefa específica, ajudando a organizar, modularizar e simplificar o código, evitando repetições.
+
+EXEMPLO DE FUNÇÃO #1
+    Imagine uma função calcular_media(nota1, nota2, nota3):
+    1. Definição/Declaração: Você cria essa função uma vez, dizendo a ela para somar as três notas e dividir por três.
+    2. Chamada: Você pode chamá-la com diferentes notas: calcular_media(7, 8, 9) ou calcular_media(5, 6, 7).
+    3. Retorno: A função executa o cálculo e "devolve" o resultado (a média), que pode ser usado em outras partes do seu código, como para verificar se o aluno passou ou não.
+
+EXEMPLO DE FUNÇÃO #2
+function torrar(){
+    console.log("torrando pão")
+}
+
+torrar()
+>>> torrando pão
+
+function injetarPao(){
+    console.log("preparando para injetar o pão")
+    console.log("finalizado")
+}
+
+injetarPao()
+>>> preparando para injetar o pão
+>>> finalizado
+
+O QUE SÃO FUNÇÕES COM PARÂMENTROS
+    Funções com parâmetros são blocos de código reutilizáveis que recebem dados (os parâmetros) para realizar tarefas.
+    Definição: Ao criar a função, você lista os parâmetros entre parênteses (ex: def somar(num1, num2):), indicando quais dados ela precisa.
+Chamada: Ao usar a função, você passa os valores (argumentos) nos parênteses (ex: somar(3, 5)), que são armazenados nos parâmetros definidos.
+Flexibilidade: O mesmo código da função pode ser usado com dados diferentes, como somar(10, 20) ou somar(100, 200), gerando resultados distintos.
+
+EXEMPLO DE FUNÇÕES COM PARÂMETROS
+function torrar(pao, nome){
+    console.log("torrada feita com " + pao)
+    console.log("ela é um pedido de " + nome)
+}
+
+torrar("pão de forma", "felipe")
+>>> torrada feita com pão de forma
+>>> ela é um pedido de felipe
+
+torrar("pão integral", "matheus")
+>>> torrada feita com pão integral
+>>> ela é um pedido de matheus
+
+
+O QUE SÃO FUNÇÕES COM RETORNO
+    São blocos de código que, além de executar uma tarefa, devolvem um valor para a parte do programa que as chamou, usando a palavra-chave return.
+    1. Execução e Devolução: A função realiza seus cálculos ou ações e, ao encontrar return, ela para de executar e entrega o valor especificado de volta.
+    2. Armazenamento: O valor devolvido pode ser capturado e guardado em uma variável para uso futuro, como resultado = minhaFuncao(entrada).
+    3. Reutilização: Permitem modularizar o código, evitando repetições, pois a mesma função pode ser chamada várias vezes com dados diferentes para obter resultados diferentes.
+
+Diferença para funções sem retorno
+    Funções sem retorno: Executam uma ação (como imprimir algo na tela) sem produzir um valor para ser usado depois (ex: console.log).
+    Funções com retorno: Produzem um valor que pode ser manipulado, como o resultado de uma soma ou uma string formatada, tornando o código mais poderoso e organizado
+
+EXEMPLO DE FUNÇÃO COM RETORNO #1 (EM JAVASCRIPT)
+// Função que soma dois números e retorna o resultado
+function somar(a, b) {
+  return a + b; // Retorna o valor da soma
+}
+
+// Chamada da função e armazenamento do retorno
+let total = somar(5, 3); // 'total' agora contém o valor 8
+
+// Uso do valor retornado
+console.log(total); // Imprime 8
+
+EXEMPLO DE FUNÇÃO COM RETORNO #2 (EM JAVASCRIPT)
+let resultado = soma(5, 10)
+
+console.log("O Resultado dessa função é " + resultado)
+
+function soma (numA, numB) {
+    let somatorio = [3, 11, 90]
+    let segundo = [2, 100, 30]
+    return somatorio, segundo
+}
+
+
+
+EXEMPLO DE FUNÇÃO COM RETORNO #3 (EM JAVASCRIPT)
+let userName = getFirstName("Carlos-Almeida-Juanito", "-")
+console.log("Seja bem vindo " + userName);
+
+userName = getFirstName("Felipe Silva Han Solo", " ")
+console.log("Seja bem vindo " + userName);
+
+function getFirstName(name, splitChar) {
+    let firstName = name.split(splitChar)[0]
+    return firstName
+}
+
+>>> Seja bem vindo Carlos
+>>> Seja bem vindo Felipe
+
+
+DESAFIO 1: CONVERTER LOWERCASE PRA UPPERCASE
+function padronizarMensagem(mensagem) {
+    return mensagem.toUpperCase();
+}
+
+const entrada = gets();
+print(padronizarMensagem(entrada));
+
+
+DESAFIO 2: MENSAGEM PADRONIZADA DE BOAS VINDAS
+function saudacao(canal, cliente) {
+    return `Ola, ${cliente}! Bem-vindo ao canal ${canal}.`;
+}
+
+const canal = gets();
+const cliente = gets();
+
+print(saudacao(canal, cliente));
+
+
+DESAFIO 3: MENSAGEM PADRONIZADA
+
+function botSaudacao(canal) {
+    if (canal === "whatsapp") {
+        return "Ola, este e o WhatsAppBot!";
+    } else if (canal === "telegram") {
+        return "Ola, este e o TelegramBot!";
+    } else if (canal === "webchat") {
+        return "Ola, este e o WebChatBot!";
+    } else {
+        return "Canal nao suportado";
+    }
+}
+
+const canal = gets();
+print(botSaudacao(canal));
+
+
+DESAFIO DE PROJETO: CALCULADORA DE PARTIDAS RANKEADAS
+    O que deve ser utilizado: Variáveis, Operadores, Laços de repetição, Estruturas de decisões, Funções
+    Objetivo: Crie uma função que recebe como parâmetro a quantidade de vitórias e derrotas de um jogador,
+depois disso retorne o resultado para uma variável, o saldo de Rankeadas deve ser feito através do calculo (vitórias - derrotas)
+
+Se vitórias for menor do que 10 = Ferro
+Se vitórias for entre 11 e 20 = Bronze
+Se vitórias for entre 21 e 50 = Prata
+Se vitórias for entre 51 e 80 = Ouro
+Se vitórias for entre 81 e 90 = Diamante
+Se vitórias for entre 91 e 100= Lendário
+Se vitórias for maior ou igual a 101 = Imortal
+
+    Saída: Ao final deve se exibir uma mensagem: "O Herói tem de saldo de **{saldoVitorias}** está no nível de **{nivel}**"
+
+CIDADELA DOS OBJETOS: O QUE É JSON?
+    Chave e valor com o objetivo de transferir dados.
+    JSON (JavaScript Object Notation) é um formato leve e legível por humanos para troca de dados estruturados, baseado na sintaxe de objetos JavaScript, usado principalmente para transferir informações entre servidores e aplicações web, sendo independente de linguagem de programação e fácil de analisar por máquinas.
+
+PARA QUE SERVE JSON?
+    Intercâmbio de Dados: Principalmente para enviar dados entre um servidor e um navegador (aplicações web) ou entre diferentes sistemas e plataformas.
+    APIs (RESTful): É o formato padrão para enviar e receber dados em muitas APIs, facilitando a comunicação entre sistemas.
+    Armazenamento: Usado em alguns bancos de dados NoSQL para armazenar dados de forma flexível.
+    Configuração: Arquivos .json são comuns para configurações de projetos (ex: package.json no Node.js).
+
+COMO FUNCIONA JSON?
+    Objetos: { "chave": "valor", "numero": 123 }.
+    Arrays: ["item1", 456, true].
+    Tipos de Dados: Strings (entre aspas duplas), números, booleanos (true/false), null, objetos e arrays podem ser valores.
+
+EXEMPLO DE JSON #1
+let name = "Felipe"
+let age = 28
+let products = ["mouse 2xwm", "Teclado mecânico", "Monitor"]
+let productsValues = [29.90, 129.99, 899.99]
+
+generate(name, products)
+
+function generateInvoice(name, products){
+    console.log("O comprador é " + name)
+    console.log("-----------")
+    console.log("O produto é " + products[0])
+    console.log("O valor é " + productsValues[0])
+}
+
+>>> O comprador é Felipe
+>>> -----------
+>>> O produto é mouse 2xwm
+>>> O valor é 29.90
+
+EXEMPLO DE JSON #2
+let invoice = {
+    name: "felipe",
+    age: 28
+    products: {
+        0: ["mouse 2xwm", 29.90],
+        1: ["Teclado mecânico", 129.99],
+        2: ["Monitor", "899.99"],
+    }
+}
+
+console.log(invoice)
+
+function generateInvoice(name, products){
+    console.log("O comprador é " + name)
+    console.log("-----------")
+    console.log("O produto é " + products[0])
+    console.log("O valor é " + productsValues[0])
+}
+
+PORQUE UTILIZAR JSON?
+    Porque é um formato leve, legível por humanos e máquinas, e ideal para a troca de dados entre sistemas, especialmente em APIs e aplicações web/mobile, devido à sua simplicidade, velocidade de processamento, tamanho reduzido e compatibilidade com quase todas as linguagens de programação, sendo mais eficiente que formatos como XML.
+
+QUAL A RELAÇÃO ENTRE CLASSE E OBJETO?
+    A relação é de molde para a criação. A classe é o projeto abstrato (o "blueprint") que define características (atributos) e comportamentos (métodos), enquanto o objeto é a instância concreta, o "item real" criado a partir desse modelo.
+
+O QUE SÃO OBJETOS?
+    São instâncias de classes, que combinam dados (atributos) e comportamentos (métodos) para representar entidades do mundo real ou conceitos abstratos.
+
+COMO CRIAR OBJETOS?
+     Você usa uma Classe (o molde ou planta) para definir a estrutura (atributos) e comportamentos (métodos), e então usa a palavra-chave new (em linguagens como Java/C++) ou a sintaxe de criação direta (em JavaScript/Python) para instanciar um objeto, gerando uma cópia com dados próprios a partir desse modelo, um processo chamado de instanciação.
+
+EXEMPLO DE OBJETO
+class formaDeBolo {
+    constructor(saborDaMassa, saborRecheio) {
+        this.saborDaMassa = saborDaMassa
+        this.saborRecheio = saborRecheio
+    }
+}
+
+let boloFesta = new formaDeBoolo("massa de chocolate", "recheio de nutella")
+
+console.log(boloFesta)
+
+DESAFIO
+# 3️⃣ Escrevendo as classes de um Jogo
+
+**O Que deve ser utilizado**
+
+- Variáveis
+- Operadores
+- Laços de repetição
+- Estruturas de decisões
+- Funções
+- Classes e Objetos
+
+## Objetivo:
+
+Crie uma classe generica que represente um herói de uma aventura e que possua as seguintes propriedades:
+
+- nome
+- idade
+- tipo (ex: guerreiro, mago, monge, ninja )
+
+além disso, deve ter um método chamado atacar que deve atender os seguientes requisitos:
+
+- exibir a mensagem: "o {tipo} atacou usando {ataque}")
+- aonde o {tipo} deve ser concatenando o tipo que está na propriedade da classe
+- e no {ataque} deve seguir uma descrição diferente conforme o tipo, seguindo a tabela abaixo:
+
+se mago -> no ataque exibir (usou magia)
+se guerreiro -> no ataque exibir (usou espada)
+se monge -> no ataque exibir (usou artes marciais)
+se ninja -> no ataque exibir (usou shuriken)
+
+## Saída
+
+Ao final deve se exibir uma mensagem:
+
+- "o {tipo} atacou usando {ataque}"
+  ex: mago atacou usando magia
+  guerreiro atacou usando espada
+
+
+CODIGO
+class Hero {
+    constructor(nome, idade, tipo) {
+        this.nome = nome;
+        this.idade = idade;
+        this.tipo = tipo;
+    }
+
+    atacar() {
+        let ataque;
+
+        if (this.tipo === "mago") {
+            ataque = "magia";
+        } else if (this.tipo === "guerreiro") {
+            ataque = "espada";
+        } else if (this.tipo === "monge") {
+            ataque = "artes marciais";
+        } else if (this.tipo === "ninja") {
+            ataque = "shuriken";
+        }
+
+        console.log(`o ${this.tipo} atacou usando ${ataque}`);
+    }
+}
+
+// Exemplo
+let heroi = new Hero("Arthur", 30, "guerreiro");
+heroi.atacar();
+
+
+
